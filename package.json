@@ -1,0 +1,39 @@
+{
+  "name": "budget-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Cristi Scarlat",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "0.28.4",
+    "node-sass": "^8.0.0",
+    "normalize.css": "7.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-modal": "^3.16.1",
+    "sass-loader": "6.0.6",
+    "style-loader": "^0.18.2",
+    "validator": "^13.9.0",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "description": "An app that will help the user keep track of their finances",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scarlatcristian/Budget-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scarlatcristian/Budget-App/issues"
+  },
+  "homepage": "https://github.com/scarlatcristian/Budget-App#readme"
+}
