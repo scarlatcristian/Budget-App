@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
 import { addExpense } from "./actions/expenses";
-import { setTextFilter } from "./actions/filters";
+// import { setTextFilter } from "./actions/filters";
 import getVisibleExpenses from "./selectors/expenses";
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
@@ -12,12 +12,8 @@ import "./styles/styles.scss";
 const store = configureStore();
 
 store.dispatch(addExpense({ description: "Water bill", amount: 4500 }));
-store.dispatch(addExpense({ description: "Gas bill", amount: 2222 }));
-store.dispatch(setTextFilter("gas"));
-
-setTimeout(() => {
-  store.dispatch(setTextFilter(""));
-}, 3000);
+store.dispatch(addExpense({ description: "Gas bill", createAt: 1000 }));
+store.dispatch(addExpense({ description: "Rent", amount: 109500 }));
 
 const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
