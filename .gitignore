@@ -1,3 +1,4 @@
 node_modules/
 playground/
 public/bundle.js
+src/tests/add.test.js
